@@ -372,27 +372,27 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
 						break;
 				case HAL_UART_ERROR_PE:
 						user_main_error("HAL_UART_ERROR_PE\r\n");
-						READ_REG(huart->Instance->RDR);//PEÇå±êÖ¾£¬µÚ¶þ²½¶ÁDR
+						READ_REG(huart->Instance->RDR);//PEï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½DR
 						READ_REG(huart->Instance->TDR);
-						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_PE);//Çå±êÖ¾
+						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_PE);//ï¿½ï¿½ï¿½Ö¾
 						break;
 				case HAL_UART_ERROR_NE:
 						user_main_error("HAL_UART_ERROR_NE\r\n");
-						READ_REG(huart->Instance->RDR);//NEÇå±êÖ¾£¬µÚ¶þ²½¶ÁDR
+						READ_REG(huart->Instance->RDR);//NEï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½DR
 						READ_REG(huart->Instance->TDR);
-						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_NE);//Çå±êÖ¾
+						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_NE);//ï¿½ï¿½ï¿½Ö¾
 						break;
 				case HAL_UART_ERROR_FE:
 						user_main_error("HAL_UART_ERROR_FE\r\n");
-						READ_REG(huart->Instance->RDR);//FEÇå±êÖ¾£¬µÚ¶þ²½¶ÁDR
+						READ_REG(huart->Instance->RDR);//FEï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½DR
 						READ_REG(huart->Instance->TDR);
-						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_FE);//Çå±êÖ¾
+						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_FE);//ï¿½ï¿½ï¿½Ö¾
 						break;
 				case HAL_UART_ERROR_ORE:
 						user_main_error("HAL_UART_ERROR_ORE\r\n");
-						READ_REG(huart->Instance->RDR);//OREÇå±êÖ¾£¬µÚ¶þ²½¶ÁDR
+						READ_REG(huart->Instance->RDR);//OREï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½DR
 						READ_REG(huart->Instance->TDR);
-						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_ORE);//Çå±êÖ¾
+						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_ORE);//ï¿½ï¿½ï¿½Ö¾
 						break;
 				case HAL_UART_ERROR_DMA:
 						user_main_error("HAL_UART_ERROR_DMA\r\n");
@@ -415,27 +415,27 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
 						break;
 				case HAL_UART_ERROR_PE:
 						user_main_error("HAL_UART_ERROR_PE\r\n");
-						READ_REG(huart->Instance->RDR);//PEÇå±êÖ¾£¬µÚ¶þ²½¶ÁDR
+						READ_REG(huart->Instance->RDR);//PEï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½DR
 						READ_REG(huart->Instance->TDR);
-						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_PE);//Çå±êÖ¾
+						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_PE);//ï¿½ï¿½ï¿½Ö¾
 						break;
 				case HAL_UART_ERROR_NE:
 						user_main_error("HAL_UART_ERROR_NE\r\n");
-						READ_REG(huart->Instance->RDR);//NEÇå±êÖ¾£¬µÚ¶þ²½¶ÁDR
+						READ_REG(huart->Instance->RDR);//NEï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½DR
 						READ_REG(huart->Instance->TDR);
-						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_NE);//Çå±êÖ¾
+						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_NE);//ï¿½ï¿½ï¿½Ö¾
 						break;
 				case HAL_UART_ERROR_FE:
 						user_main_error("HAL_UART_ERROR_FE\r\n");
-						READ_REG(huart->Instance->RDR);//FEÇå±êÖ¾£¬µÚ¶þ²½¶ÁDR
+						READ_REG(huart->Instance->RDR);//FEï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½DR
 						READ_REG(huart->Instance->TDR);
-						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_FE);//Çå±êÖ¾
+						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_FE);//ï¿½ï¿½ï¿½Ö¾
 						break;
 				case HAL_UART_ERROR_ORE:
 						user_main_error("HAL_UART_ERROR_ORE\r\n");
-						READ_REG(huart->Instance->RDR);//OREÇå±êÖ¾£¬µÚ¶þ²½¶ÁDR
+						READ_REG(huart->Instance->RDR);//OREï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½DR
 						READ_REG(huart->Instance->TDR);
-						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_ORE);//Çå±êÖ¾
+						__HAL_UART_CLEAR_FLAG(huart, UART_FLAG_ORE);//ï¿½ï¿½ï¿½Ö¾
 						break;
 				case HAL_UART_ERROR_DMA:
 						user_main_error("HAL_UART_ERROR_DMA\r\n");

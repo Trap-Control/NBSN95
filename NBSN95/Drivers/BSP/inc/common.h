@@ -39,8 +39,8 @@
  * @retval None
  */
 
-#define version 	"v1.1.0"
-#define version_s "110"
+#define version 	"v1.1.1"
+#define version_s "111"
 #define stack 		"D-BC95-002"
 
 #define COAP_PRO  0x01
