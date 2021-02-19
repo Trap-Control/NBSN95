@@ -162,8 +162,9 @@ void txPayLoadDeal(SENSOR* Sensor)
 	sprintf(Sensor->data+strlen(Sensor->data), "%.4x", Sensor->batteryLevel_mV);
 	sprintf(Sensor->data+strlen(Sensor->data), "%.2x", Sensor->singal);
 	sprintf(Sensor->data+strlen(Sensor->data), "%.2x", sys.mod-0x30);
-	if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_14))
-		sensor.exit_flag = sensor.exit_flag + 8;
+	
+	if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_14) && sys.mod != model6)
+		sensor.exit_flag = sensor.exit_flag + 128;
 	
 	if(sys.mod == model1)
 	{
