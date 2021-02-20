@@ -347,7 +347,7 @@ void HAL_RTCEx_AlarmBEventCallback(RTC_HandleTypeDef *hrtc)
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	if(GPIO_Pin == GPIO_PIN_14)
+	if(GPIO_Pin == GPIO_PIN_14 | GPIO_Pin == GPIO_PIN_12 )
 	{
 		sensor.exit_flag=1;
 		if(sys.mod == model6)
